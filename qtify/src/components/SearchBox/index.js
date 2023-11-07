@@ -20,6 +20,7 @@ function SearchBox() {
           fontWeight: "400",
           border: "1px solid black",
           borderRadius: "8px 0 0 8px",
+          paddingLeft: "10px",
         }}
         placeholder="Search a album of your choice"
       />
