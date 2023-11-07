@@ -1,0 +1,19 @@
+.hero-section {
+  background-color: var(--css-black);
+  width: 100vw;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section h3 {
+  color: var(--css-white);
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px 0 0;
+
+}
