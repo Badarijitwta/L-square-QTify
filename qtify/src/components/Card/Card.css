@@ -1,0 +1,56 @@
+.card-wrapper {
+  height: 232px;
+  width: 159px;
+  display: flex;
+  flex-direction: column;
+  margin: 32px;
+}
+
+.card-wrapper .card-low {
+  height: 27px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--css-white);
+  font-size: 16px;
+  padding: 3px;
+}
+
+.card-up {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-frame {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+
+}
+
+.card-img-frame img {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.card-pill-section {
+  flex: 1;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--css-white);
+  display: flex;
+  align-items: center;
+}
+
+.card-pill-content {
+  width: 71px;
+  height: 23px;
+  font-size: 10px;
+  background-color: var(--css-black);
+  color: var(--css-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  border-radius: 10px;
+}
