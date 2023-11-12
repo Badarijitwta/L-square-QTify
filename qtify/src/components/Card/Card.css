@@ -3,7 +3,7 @@
   width: 159px;
   display: flex;
   flex-direction: column;
-  margin: 32px;
+  margin: 12px;
 }
 
 .card-low {
@@ -14,6 +14,8 @@
   color: var(--css-white);
   font-size: 16px;
   padding: 3px;
+  line-height: 14.5px;
+  margin-top: 2px;
 }
 
 .card-up {

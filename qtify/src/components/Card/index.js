@@ -1,24 +1,21 @@
 import React from "react";
 import "./Card.css";
 
-function Card() {
+function Card({ imgSrc, label, followersCount }) {
   return (
     <div className="card-wrapper">
       <div className="card-up">
         <div className="card-img-frame">
-          <img
-            src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800"
-            alt="Isle"
-          />
+          <img src={imgSrc} alt="Album" />
         </div>
         <div className="card-pill-section">
           <div className="card-pill-content">
-            <h5>100 Follows</h5>
+            <h5>{followersCount} Follows</h5>
           </div>
         </div>
       </div>
       <div className="card-low">
-        <h5>New English Songs</h5>
+        <h5>{label}</h5>
       </div>
     </div>
   );
