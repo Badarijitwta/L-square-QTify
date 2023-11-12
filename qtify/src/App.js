@@ -14,9 +14,9 @@ function App() {
     axios.get(`${ENDPOINT}albums/top`).then(({ data }) => {
       setTopAlbums(data);
     });
-    // axios.get(`${ENDPOINT}albums/new`).then(({ data }) => {
-    //   setnewAlbums(data);
-    // });
+    axios.get(`${ENDPOINT}albums/new`).then(({ data }) => {
+      setnewAlbums(data);
+    });
     // axios.get(`${ENDPOINT}songs`).then(({ data }) => {
     //   setallAlbums(data);
     // });
@@ -26,8 +26,8 @@ function App() {
       <Navbar />
       <Hero />
       <Section heading={"Top Albums"} data={topAlbums} />
-      {/* <Section heading={"New Albums"} data={newAlbums} />
-      <Section heading={"Songs"} data={allAlbums} /> */}
+      <Section heading={"New Albums"} data={newAlbums} />
+      {/* <Section heading={"Songs"} data={allAlbums} /> */}
     </div>
   );
 }
