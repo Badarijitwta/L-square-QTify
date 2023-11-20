@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useId } from "react";
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Card from "../Card";
@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 function Carousel({ data }) {
+  const divid = useId();
   return (
     <div className="carousel-container">
       <Swiper
@@ -22,12 +23,16 @@ function Carousel({ data }) {
         // pagination={{
         //   type: "custom",
         // }}
-        navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
+        navigation={{
+          nextEl: ".arrow-right",
+          prevEl: ".arrow-left",
+        }}
         virtual
       >
         {data.map((card) => (
-          <SwiperSlide key={card.id}>
+          <SwiperSlide>
             <Card
+              key={card.id}
               imgSrc={card.image}
               label={card.title}
               followersCount={card.follows}
@@ -35,6 +40,7 @@ function Carousel({ data }) {
           </SwiperSlide>
         ))}
       </Swiper>
+
       <div className="arrow-left arrow">
         <img src="left-arrow.png" alt="" />
       </div>

@@ -36,3 +36,10 @@
   font-weight: 600; */
   cursor: pointer;
 }
+
+.tab-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+}

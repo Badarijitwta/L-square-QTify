@@ -1,0 +1,20 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  /* width: 90%; */
+  /* margin-right: 20%; */
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+}
+
+.acc-content {
+  padding: 20px;
+}
+
+h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+}
