@@ -30,7 +30,7 @@ function App() {
       <Section heading={"Top Albums"} data={topAlbums} />
       <Section heading={"New Albums"} data={newAlbums} />
       <Section heading={"Songs"} data={allAlbums} />
-      {/* <Accordion /> */}
+      <Accordion />
     </div>
   );
 }
