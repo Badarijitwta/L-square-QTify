@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-function Card({ imgSrc, label, followersCount }) {
+function Card({ imgSrc, label, followersCount, likes }) {
   return (
     <div className="card-wrapper">
       <div className="card-up">
@@ -10,7 +10,7 @@ function Card({ imgSrc, label, followersCount }) {
         </div>
         <div className="card-pill-section">
           <div className="card-pill-content">
-            <h5>{followersCount} Follows</h5>
+            {likes ? <h5>{likes} likes</h5> : <h5>{followersCount} Follows</h5>}
           </div>
         </div>
       </div>

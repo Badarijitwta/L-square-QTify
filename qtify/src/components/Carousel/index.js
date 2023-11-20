@@ -30,12 +30,12 @@ function Carousel({ data }) {
         virtual
       >
         {data.map((card) => (
-          <SwiperSlide>
+          <SwiperSlide key={card.id}>
             <Card
-              key={card.id}
               imgSrc={card.image}
               label={card.title}
               followersCount={card.follows}
+              likes={card.likes}
             />
           </SwiperSlide>
         ))}

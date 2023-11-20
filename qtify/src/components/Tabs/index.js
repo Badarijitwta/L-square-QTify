@@ -111,7 +111,10 @@ export default function CustomizedTabs({ data }) {
         <Carousel data={data} />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Carousel data={data.filter((item) => item.genre.key === "rock")} />
+        <Carousel
+          data={data.filter((item) => item.genre.key === "rock")}
+          likes={data.likes}
+        />
       </TabPanel>
       <TabPanel value={value} index={3}>
         <Carousel data={data.filter((item) => item.genre.key === "pop")} />
