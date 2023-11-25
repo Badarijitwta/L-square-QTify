@@ -1,4 +1,4 @@
-import React, { useId } from "react";
+import React, { useEffect, useId } from "react";
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Card from "../Card";
@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 
 function Carousel({ data }) {
   const divid = useId();
+
   return (
     <div className="carousel-container">
       <Swiper
@@ -36,6 +37,7 @@ function Carousel({ data }) {
               label={card.title}
               followersCount={card.follows}
               likes={card.likes}
+              songs={card.songs}
             />
           </SwiperSlide>
         ))}

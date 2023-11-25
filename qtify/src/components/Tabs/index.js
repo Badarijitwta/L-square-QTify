@@ -78,23 +78,10 @@ export default function CustomizedTabs({ data }) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  // React.useEffect(() => {
-  //   axios.get(`https://qtify-backend-labs.crio.do/genres`).then(({ data }) => {
-  //     setGenre(data);
-  //   });
-  // }, []);
-  // console.log(genre);
+
 
   return (
-    // < sx={{ width: '100%' }}>
-    //   <Box sx={{ bgcolor: '#fff' }}>
-    //     <AntTabs value={value} onChange={handleChange} aria-label="ant example">
-    //       <AntTab label="Tab 1" />
-    //       <AntTab label="Tab 2" />
-    //       <AntTab label="Tab 3" />
-    //     </AntTabs>
-    //     <Box sx={{ p: 3 }} />
-    //   </Box>
+    
     <Box sx={{ bgcolor: "#121212" }}>
       <StyledTabs
         value={value}
